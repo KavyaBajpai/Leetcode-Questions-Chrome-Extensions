@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Leetcode Questions",
+    "version": "1.0",
+    "description": "This extension will help you to solve leetcode questions",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://leetcode.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+        },
+    "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+    }
