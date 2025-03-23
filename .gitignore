@@ -1,0 +1,2 @@
+# Ignore node_modules (if using a backend)
+node_modules

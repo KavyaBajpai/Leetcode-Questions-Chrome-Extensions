@@ -14,10 +14,14 @@
     "action": {
         "default_popup": "popup.html"
         },
+    "background": {
+  "service_worker": "background.js"
+},
     "content_scripts": [
     {
       "matches": ["https://leetcode.com/*"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "css": ["styles.css"]
     }
   ]
     }

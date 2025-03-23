@@ -1,0 +1,26 @@
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(5px);
+    }
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f6d6d6; /* Dark Grey */
+    color: black;
+    border: none;
+    padding: 12px 18px;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    animation: bounce 0.6s ease-in-out; /* Apply bounce effect */
+}
